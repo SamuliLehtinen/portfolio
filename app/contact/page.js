@@ -13,35 +13,30 @@ export default function ContactPage() {
 
   const [formStatus, setFormStatus] = useState(null)
 
-  // Gérer la soumission du formulaire
   const handleSubmit = async (e) => {
     e.preventDefault()
     setFormStatus('loading')
-  
-    const serviceID = process.env.NEXT_PUBLIC_REACT_APP_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_REACT_APP_TEMPLATE_ID;
-    const userID = process.env.NEXT_PUBLIC_REACT_APP_USER_ID;
-    
-  
-    // Ajouter ici ton adresse email (pour que l'email soit envoyé vers toi)
+
+    const serviceID = process.env.NEXT_PUBLIC_REACT_APP_SERVICE_ID
+    const templateID = process.env.NEXT_PUBLIC_REACT_APP_TEMPLATE_ID
+    const userID = process.env.NEXT_PUBLIC_REACT_APP_USER_ID
+
     const templateParams = {
       name: formData.name,
       email: formData.email,
       message: formData.message
     }
-  
+
     try {
       const response = await emailjs.send(serviceID, templateID, templateParams, userID)
       console.log('Réponse EmailJS:', response)
-      setFormStatus('success') // Si l'email est envoyé avec succès
+      setFormStatus('success')
     } catch (error) {
-      console.error('Erreur lors de l\'envoi de l\'email:', error) // Affichage plus détaillé de l'erreur
-      setFormStatus('error') // Si une erreur se produit
+      console.error('Erreur lors de l\'envoi de l\'email:', error)
+      setFormStatus('error')
     }
   }
-  
 
-  // Gérer la modification des champs du formulaire
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -50,10 +45,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')"
-            }}>
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-black">
       <motion.div
         className="text-3xl font-bold text-white mb-6"
         initial={{ opacity: 0 }}
@@ -125,7 +117,6 @@ export default function ContactPage() {
           </motion.button>
         </div>
 
-        {/* Message de confirmation */}
         {formStatus === 'success' && (
           <div className="text-green-500 mt-4">Merci ! Votre message a été envoyé avec succès.</div>
         )}
