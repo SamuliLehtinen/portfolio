@@ -3,8 +3,7 @@ import './globals.css'; // Corrigé si ton fichier CSS est à la racine ou dans 
 import Navbar from './components/Navbar';
 
 export const metadata = {
-  title: 'Portfolio Lehtinen Samuli',
-  description: 'Portfolio personnel multilingue',
+  title: 'Samuli Lehtinen'
 };
 
 export default async function RootLayout({ children, params: { locale } }) {

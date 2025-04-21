@@ -9,7 +9,7 @@ export default function CVPage() {
 
         {/* Introduction */}
         <p className="mb-6 text-lg text-white">
-          Bienvenue sur ma page de CV. Choisis la langue dans laquelle tu veux télécharger mon CV :
+          Bienvenue sur ma page de CV. Choisir la langue dans laquelle vous voulez télécharger mon CV :
         </p>
 
         {/* Sélection des langues */}
