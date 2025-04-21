@@ -18,9 +18,9 @@ export default function ContactPage() {
     e.preventDefault()
     setFormStatus('loading')
   
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    const templateID = process.env.REACT_APP_TEMPLATE_ID;
-    const userID = process.env.REACT_APP_USER_ID;
+    const serviceID = process.env.NEXT_PUBLIC_REACT_APP_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_REACT_APP_TEMPLATE_ID;
+    const userID = process.env.NEXT_PUBLIC_REACT_APP_USER_ID;
     
   
     // Ajouter ici ton adresse email (pour que l'email soit envoyé vers toi)

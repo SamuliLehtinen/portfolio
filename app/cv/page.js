@@ -65,14 +65,14 @@ export default function CVPage() {
           <h2 className="text-2xl font-semibold text-blue-400 mb-4">Mes profils professionnels</h2>
           <div className="flex justify-center gap-6">
             <a
-              href="https://www.linkedin.com/in/votre-profil"
+              href="https://www.linkedin.com/in/samuli-lehtinen-30915b239"
               target="_blank"
               className="text-blue-600 hover:text-blue-700 transition"
             >
               LinkedIn
             </a>
             <a
-              href="https://github.com/votre-utilisateur"
+              href="https://github.com/SamuliLehtinen"
               target="_blank"
               className="text-gray-300 hover:text-white transition"
             >
