@@ -69,8 +69,8 @@ export default function HomePage() {
           transition={{ delay: 5 }}
         >
           <a href="/formation_projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Ma formation et mes projets</a>
-          <a href="/contact" className="px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">Me contacter</a>
           <a href="/cv" className="px-6 py-3 bg-gray-800 text-white border border-gray-600 rounded-lg hover:bg-gray-700 transition">Consulter mon CV</a>
+          <a href="/contact" className="px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">Me contacter</a>
         </motion.div>
       </div>
     </section>

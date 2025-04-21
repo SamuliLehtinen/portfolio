@@ -21,7 +21,7 @@ export default function ProjectsPage() {
 
       </section>
 
-      {/* Baccalauréat */}
+      {/* Master */}
       <section className="max-w-4xl mx-auto mb-12">
         <motion.div
           className="text-3xl font-semibold text-blue-300 mb-4"
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2>Baccalauréat : 2018</h2>
+          <h2>Master : 09/2023 - 02/2025</h2>
         </motion.div>
 
         <motion.p
@@ -38,25 +38,25 @@ export default function ProjectsPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          Lycée International Ferney Voltaire
+          HES-SO Master - Lausanne
         </motion.p>
 
         <div className="mt-6">
           <ul className="list-disc list-inside text-gray-300">
             <li>
-              <strong>Baccalauréat général Scientifique, Option International section Anglais</strong>
+              <strong>Master of Science en Engineering - Computer Science</strong>
             </li>
           </ul>
         </div>
-        {/* Lien vers le site de la Haute École d'Ingénierie */}
+        {/* Lien vers le site du Master */}
         <div className="mt-6">
           <a
-            href="https://csi-ferneyvoltaire.etab.ac-lyon.fr/spip/"
+            href="https://www.hes-so.ch/master/hes-so-master"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300"
           >
-            Lycée International - Site web
+            HES-SO Master - Site web
           </a>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function ProjectsPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2>Bachelor : 09/2020- 06/2023</h2>
+          <h2>Bachelor : 09/2020- 08/2023</h2>
         </motion.div>
 
         <motion.p
@@ -101,9 +101,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      
-
-      {/* Master */}
+      {/* Baccalauréat */}
       <section className="max-w-4xl mx-auto mb-12">
         <motion.div
           className="text-3xl font-semibold text-blue-300 mb-4"
@@ -111,7 +109,7 @@ export default function ProjectsPage() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h2>Master : 09/2023 - 06/2024</h2>
+          <h2>Baccalauréat : 2018</h2>
         </motion.div>
 
         <motion.p
@@ -120,25 +118,25 @@ export default function ProjectsPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          HES-SO Master - Lausanne
+          Lycée International Ferney Voltaire
         </motion.p>
 
         <div className="mt-6">
           <ul className="list-disc list-inside text-gray-300">
             <li>
-              <strong>Master of Science en Engineering - Computer Science</strong>
+              <strong>Baccalauréat général Scientifique, Option International section Anglais</strong>
             </li>
           </ul>
         </div>
-        {/* Lien vers le site du Master */}
+        {/* Lien vers le site */}
         <div className="mt-6">
           <a
-            href="https://www.hes-so.ch/master/hes-so-master"
+            href="https://csi-ferneyvoltaire.etab.ac-lyon.fr/spip/"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300"
           >
-            HES-SO Master - Site web
+            Lycée International - Site web
           </a>
         </div>
       </section>
