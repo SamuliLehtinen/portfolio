@@ -10,7 +10,8 @@ export default function Navbar() {
         <h1 className="text-xl font-bold">Samuli Lehtinen</h1>
         <ul className="flex gap-6">
           <li><Link href="/">Accueil</Link></li>
-          <li><Link href="/formation_projects">Formation et projets</Link></li>
+          <li><Link href="/formation">Formation</Link></li>
+          <li><Link href="/projects">Projets</Link></li>
           <li><Link href="/cv">CV</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
