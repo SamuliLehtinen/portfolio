@@ -10,13 +10,11 @@ export const projects = [
     {
       title: "Simulation de Machine industrielle",
       description: "Projet final de Master, visant à créer une simulation d'un pont roulant en réalité virtuelle. \nDéployé sur Meta Quest Pro et intégrant un gilet haptique bhaptics, ce simulateur a été conçu pour améliorer la formation des opérateurs.",
-      link: "https://github.com/ton-github/todo-app",
       technologies: ["C#", "Unity Game Engine", "Meta Quest Pro", "bhaptics Tactot DK3"], 
     },
     {
       title: "Boite à outil pour Interaction Gestuelle sur MetaQuest3",
       description: "Développement de mécanismes d'interaction gestuelle innovants en se basant sur la reconnaissance de base des SDK Meta Quest. \nCette application a permis de reconnaitre un poing fermé, une paume ouverte, ainsi que des gestes simultanés avec les deux mains. Le but est de mettre à disposition du développeur un moyen plus facile afin de diversifier les actions possibles d'un utilisateur dans un monde virtuelle.",
-      link: "https://github.com/ton-github/todo-app",
       technologies: ["C#", "Unity Game Engine", "Meta Quest Pro", "bhaptics Tactot DK3"],
     },
     {
@@ -28,7 +26,6 @@ export const projects = [
     {
       title: "Automatisation de pipeline pour l'enseignement",
       description: "Projet final de Bachelor, visant à automatiser des pipelines pour transférer de données entre Moodle et GitLab.",
-      link: "https://github.com/ton-github/netflix-clone",
       technologies: ["Python", "GitLab CI/CD", "Moodle API", "GitLab API"], 
     },
   ];

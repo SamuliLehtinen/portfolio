@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                         Voir la démo
                       </a>
                     )}
-                    {project.link && ![1, 2, 3].includes(index) && (
+                    {project.link && ![1, 2, 4].includes(index) && (
                       <a
                         href={project.link}
                         target="_blank"

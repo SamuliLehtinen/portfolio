@@ -30,9 +30,18 @@ export default function FormationPage() {
         <motion.p className="text-lg text-gray-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
           HES-SO Master - Lausanne
         </motion.p>
-        <div className="mt-6">
-          <ul className="list-disc list-inside text-gray-300">
+        <div className="mt-6 space-y-4 text-gray-300">
+          <ul className="list-disc list-inside">
             <li><strong>Master of Science en Engineering - Computer Science</strong></li>
+            <li><strong>Objectifs :</strong> Les systèmes de communication, les systèmes d’information, la cybersécurité, les systèmes embarqués et les “advanced users interfaces”.</li>
+            <li><strong>Compétences clés :</strong> IoT, cloud, systèmes distribués/parallèles et/ou mobiles, collecte, organisation, gestion, analyse, récupération et visualisation d'information, interfaces utilisateur “naturels”, réalité augmentée, réalité virtuelle.</li>
+            <li><strong>Projets réalisés :</strong> 
+              <ul className="list-disc list-inside ml-6">
+                <li>Travail de Master : Simulation de Machine Immersive.</li>
+                <li>Projet Interdisciplinaire : Meta Quest 3 Gesture Set.</li>
+                <li>Projet d'Approfondissement : Ai Market Place.</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div className="mt-6">
@@ -50,14 +59,23 @@ export default function FormationPage() {
       {/* Bachelor */}
       <section className="max-w-4xl mx-auto mb-12">
         <motion.div className="text-3xl font-semibold text-blue-300 mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h2>Bachelor : 09/2020- 08/2023</h2>
+          <h2>Bachelor : 09/2020 - 08/2023</h2>
         </motion.div>
         <motion.p className="text-lg text-gray-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
           Haute Ecole d'Ingénierie - Sion
         </motion.p>
-        <div className="mt-6">
-          <ul className="list-disc list-inside text-gray-300">
+        <div className="mt-6 space-y-4 text-gray-300">
+          <ul className="list-disc list-inside">
             <li><strong>Bachelor Système Industriel - Infotronics</strong></li>
+            <li><strong>Objectifs :</strong> Création des systèmes industriels 4.0 connectés et durables pour développer des technologies innovantes répondant aux défis de demain. Apprentissage de la conception mécanique et numérique grâce à des projets collaboratifs en lien avec l'industrie. </li>
+            <li><strong>Compétences clés :</strong> électronique et informatique industrielle</li>
+            <li><strong>Projets réalisés :</strong>
+              <ul className="list-disc list-inside ml-6">
+                <li>Travail de Bachelor : Pipeline automation for teachnig with Renku.</li>
+                <li>Summer School 2 : kart éléctrique grandeur nature piloté par un joystick.</li>
+                <li>Summer School 1 : voiture télécommandée par une application mobile en bluetooth.</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div className="mt-6">
@@ -68,31 +86,6 @@ export default function FormationPage() {
             className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300"
           >
             Haute École d'Ingénierie - Site web
-          </a>
-        </div>
-      </section>
-
-      {/* Baccalauréat */}
-      <section className="max-w-4xl mx-auto mb-12">
-        <motion.div className="text-3xl font-semibold text-blue-300 mb-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          <h2>Baccalauréat : 2018</h2>
-        </motion.div>
-        <motion.p className="text-lg text-gray-300" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
-          Lycée International Ferney Voltaire
-        </motion.p>
-        <div className="mt-6">
-          <ul className="list-disc list-inside text-gray-300">
-            <li><strong>Baccalauréat général Scientifique, Option International section Anglais</strong></li>
-          </ul>
-        </div>
-        <div className="mt-6">
-          <a
-            href="https://csi-ferneyvoltaire.etab.ac-lyon.fr/spip/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition duration-300"
-          >
-            Lycée International - Site web
           </a>
         </div>
       </section>
