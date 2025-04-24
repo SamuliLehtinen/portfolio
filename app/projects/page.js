@@ -1,13 +1,15 @@
 'use client'
 
+import React, { useState } from "react";
+import Reveal from "../components/Reveal";
+import Modal from "../components/Modal"; // N'oublie pas d'importer le composant
 import { projects } from "./data";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import Reveal from "../components/Reveal";
-import { useState } from "react";
 
 
 export default function ProjectsPage() {
+  const [modalVideoSrc, setModalVideoSrc] = useState(null); // Pas besoin de type explicite ici
+
   return (
     <main className="min-h-screen p-6 sm:p-12 space-y-24 bg-black text-white">
       <h1 className="text-4xl font-bold text-blue-400 text-center mb-12">
@@ -15,8 +17,6 @@ export default function ProjectsPage() {
       </h1>
 
       {projects.map((project, index) => {
-        const [showVideo, setShowVideo] = useState(false);
-
         return (
           <Reveal key={index} delay={index * 0.2}>
             <section className="max-w-4xl mx-auto mb-16">
@@ -24,45 +24,51 @@ export default function ProjectsPage() {
                 {project.title}
               </h2>
 
-              {/* Vidéos avec bouton pour afficher */}
+              {/* Miniature pour ouvrir la vidéo */}
               {(index === 1 || index === 2) && (
-                <div className="mb-6">
-                  {!showVideo ? (
-                    <button
-                      onClick={() => setShowVideo(true)}
-                      className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-                    >
-                      Vidéo démo
-                    </button>
-                  ) : (
-                    <motion.div
-                      initial={{ x: -200, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
-                      <video width="100%" controls>
-                        <source
-                          src={
-                            index === 1
-                              ? "videos/Demo_SimulationMachine.mp4"
-                              : "videos/POC_demo_PA.mp4"
-                          }
-                          type="video/mp4"
-                        />
-                        Votre navigateur ne supporte pas la vidéo.
-                      </video>
-                    </motion.div>
-                  )}
+                <div className="mb-6 flex justify-center w-full relative group cursor-pointer max-w-fit mx-auto">
+                <Image
+                  src={`/images/thumbnails/video_thumb_${index}.jpg`}
+                  alt="Aperçu vidéo"
+                  width={320}
+                  height={180}
+                  className="rounded-lg shadow group-hover:opacity-80 transition"
+                  onClick={() =>
+                    setModalVideoSrc(
+                      index === 1
+                        ? "videos/Demo_SimulationMachine.mp4"
+                        : "videos/POC_demo_PA.mp4"
+                    )
+                  }
+                />
+              
+                {/* Overlay content */}
+                <div
+                  className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black/40 rounded-lg"
+                  onClick={() =>
+                    setModalVideoSrc(
+                      index === 1
+                        ? "videos/Demo_SimulationMachine.mp4"
+                        : "videos/POC_demo_PA.mp4"
+                    )
+                  }
+                >
+                  {/* Play icon (can be a real icon or emoji for simplicity) */}
+                  <div className="text-4xl mb-2">▶️</div>
                 </div>
+              </div>
+              
               )}
 
+              {/* Description, etc. */}
               <div className="flex items-start gap-6">
                 <div className="flex-1">
-                <div className="text-gray-300 mb-4">
-                  {project.description.split('\n').map((line, i) => (
-                    <p key={i} className="mb-2">{line}</p>
-                  ))}
-                </div>
+                  <div className="text-gray-300 mb-4">
+                    {project.description.split('\n').map((line, i) => (
+                      <p key={i} className="mb-2">{line}</p>
+                    ))}
+                  </div>
+
                   <div className="mb-4">
                     <h3 className="font-medium text-blue-400">Technologies :</h3>
                     <ul className="list-disc list-inside text-gray-300">
@@ -112,6 +118,20 @@ export default function ProjectsPage() {
           </Reveal>
         );
       })}
+
+      {/* Modal video */}
+      <Modal isOpen={!!modalVideoSrc} onClose={() => setModalVideoSrc(null)}>
+        <div className="flex justify-center">
+          <video
+            className="max-w-2xl w-full h-auto rounded-lg"
+            controls
+            autoPlay
+          >
+            <source src={modalVideoSrc || ""} type="video/mp4" />
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        </div>
+      </Modal>
     </main>
   );
 }

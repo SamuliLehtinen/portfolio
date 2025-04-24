@@ -18,7 +18,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-black">
+    <section className="fixed inset-0 h-screen w-screen overflow-fixed bg-black">
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 min-h-screen">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -68,10 +68,6 @@ export default function HomePage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 5 }}
         >
-          <a href="/projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Mes projets</a>
-          <a href="/formation" className="px-6 py-3 bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition">Ma formation</a>
-          <a href="/cv" className="px-6 py-3 bg-gray-800 text-white border border-gray-600 rounded-lg hover:bg-gray-700 transition">Consulter mon CV</a>
-          <a href="/contact" className="px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">Me contacter</a>
         </motion.div>
       </div>
     </section>
