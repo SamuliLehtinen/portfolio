@@ -45,7 +45,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-black">
+    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-12">
       <motion.div
         className="text-3xl font-bold text-white mb-6"
         initial={{ opacity: 0 }}

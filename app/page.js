@@ -18,7 +18,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <section className="fixed inset-0 h-screen w-screen overflow-fixed bg-black">
+    <section className="fixed inset-0 h-screen w-screen overflow-fixed">
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 min-h-screen">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

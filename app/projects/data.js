@@ -9,7 +9,7 @@ export const projects = [
     },
     {
       title: "Simulation de Machine industrielle",
-      description: "Projet final de Master, visant à créer une simulation d'un pont roulant en réalité virtuelle. \nDéployé sur Meta Quest Pro et intégrant un gilet haptique bhaptics, ce simulateur a été conçu pour améliorer la formation des opérateurs.",
+      description: "Projet final de Master visant à créer une simulation d'un pont roulant en réalité virtuelle. \nDéployé sur Meta Quest Pro et intégrant un gilet haptique bhaptics, ce simulateur a été conçu pour améliorer la formation des opérateurs.",
       technologies: ["C#", "Unity Game Engine", "Meta Quest Pro", "bhaptics Tactot DK3"], 
     },
     {
@@ -25,7 +25,7 @@ export const projects = [
     },
     {
       title: "Automatisation de pipeline pour l'enseignement",
-      description: "Projet final de Bachelor, visant à automatiser des pipelines pour transférer de données entre Moodle et GitLab.",
+      description: "Projet final de Bachelor visant à automatiser des pipelines pour transférer des données entre Moodle et GitLab. \nCette application a pour but de faire gagner du temps aux enseignants en réduisant le temps des tâches répétitives.",
       technologies: ["Python", "GitLab CI/CD", "Moodle API", "GitLab API"], 
     },
   ];

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function FormationPage() {
   return (
-    <main className="min-h-screen p-6 sm:p-12 space-y-24 bg-black text-white">
+    <main className="min-h-screen p-6 sm:p-12 space-y-24 text-white">
       {/* Section Ma Formation */}
       <section className="max-w-4xl mx-auto mb-12">
         <motion.div
